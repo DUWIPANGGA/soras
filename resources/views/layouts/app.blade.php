@@ -181,15 +181,9 @@
         <aside class="app-sidebar" :class="{ 'mobile-open': mobileOpen }">
 
             {{-- Logo --}}
-            <div class="flex items-center gap-3 px-5 border-b border-gray-100 dark:border-white/[0.06]"
+            <div class="flex items-center gap-1 px-5 border-b border-gray-100 dark:border-white/[0.06]"
                 style="height:64px; flex-shrink:0;">
-                <div class="flex items-center justify-center rounded-xl text-white"
-                    style="width:36px;height:36px;flex-shrink:0;background:linear-gradient(135deg,#16a34a,#15803d);box-shadow:0 4px 12px rgba(22,163,74,0.3);">
-                    <svg width="18" height="18" fill="none" stroke="white" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                            d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                </div>
+                <img src="{{ asset('assets/soras-logo.png') }}" alt="SORAS Logo" class="w-14 h-14" loading="lazy">
                 <div>
                     <div class="font-extrabold dark name-active" style="font-size:15px;">
                         <p class="text-base">SORAS</p>

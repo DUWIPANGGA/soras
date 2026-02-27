@@ -10,20 +10,12 @@
 
 <body class="min-h-screen bg-gradient-to-br from-primary-50 to-white flex items-center justify-center p-4">
 
-    <div class="w-full max-w-md">
+    <div class="w-full max-w-md py-6">
 
         {{-- Logo --}}
-        <div class="text-center mb-8">
-            <a href="{{ route('landing') }}" class="inline-flex items-center gap-2">
-                <div class="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                </div>
-                <span class="text-2xl font-bold text-gray-900">SORAS</span>
-            </a>
-            <h1 class="mt-6 text-2xl font-bold text-gray-900">Selamat Datang Kembali</h1>
+        <div class="text-center">
+            <img src="{{ asset('assets/soras-logo.png') }}" alt="SORAS Logo" class="w-25 h-25 md:w-35 md:h-35 mx-auto" loading="lazy">
+            <h1 class="text-2xl font-bold text-gray-900">Selamat Datang Kembali</h1>
             <p class="mt-2 text-sm text-gray-500">Masuk ke akun kamu untuk melanjutkan</p>
         </div>
 

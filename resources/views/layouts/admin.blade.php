@@ -161,14 +161,9 @@
         <aside class="admin-sidebar" :class="{ 'mobile-open': mobileOpen }">
 
             {{-- Logo --}}
-            <div class="flex items-center gap-3 px-5 border-b border-white/[0.06]" style="height:64px;flex-shrink:0;">
-                <div class="flex items-center justify-center rounded-xl text-white"
-                    style="width:36px;height:36px;flex-shrink:0;background:linear-gradient(135deg,#6366f1,#7c3aed);box-shadow:0 4px 12px rgba(99,102,241,0.4);">
-                    <svg width="18" height="18" fill="none" stroke="white" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                    </svg>
-                </div>
+            <div class="flex items-center gap-1 px-5 border-b border-white/[0.06]" style="height:64px;flex-shrink:0;">
+                <img src="{{ asset('assets/soras-logo.png') }}" alt="SORAS Logo" class="w-14 h-14" loading="lazy">
+
                 <div>
                     <p class="font-extrabold text-white admin-name-active" style="font-size:15px;">SORAS</p>
                     <p class="text-gray-500" style="font-size:10px;">Admin Panel</p>

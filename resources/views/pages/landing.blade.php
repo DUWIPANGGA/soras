@@ -45,15 +45,10 @@
 
     {{-- Navbar --}}
     <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                </div>
-                <span class="font-bold text-gray-900">SORAS</span>
+                <img src="{{ asset('assets/soras-logo.png') }}" alt="SORAS Logo" class="w-20 h-20">
+                {{-- <span class="font-bold text-gray-900">SORAS</span> --}}
             </div>
             <div class="flex items-center gap-3">
                 @auth
