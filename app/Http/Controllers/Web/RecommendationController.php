@@ -77,7 +77,7 @@ class RecommendationController extends Controller
         $recommendation = $this->service->getDetail($id);
 
         // Pastikan milik user ini
-        if ($recommendation->userProfile->user_id !== $request->user()->id) {
+        if ($recommendation->userProfile->user_id != $request->user()->id) {
             abort(403);
         }
 

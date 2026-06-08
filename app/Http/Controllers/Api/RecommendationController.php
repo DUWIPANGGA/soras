@@ -48,7 +48,7 @@ class RecommendationController extends Controller
         $recommendation = $this->service->getDetail($id);
 
         // Pastikan rekomendasi milik user ini
-        if ($recommendation->userProfile->user_id !== $request->user()->id) {
+        if ($recommendation->userProfile->user_id != $request->user()->id) {
             return response()->json([
                 'success' => false,
                 'message' => 'Tidak ada akses ke rekomendasi ini.',
